@@ -1,0 +1,88 @@
+@import "settings";
+
+.image__page {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-color: $bgColor;
+    @extend %flex;
+    &__img {
+        margin: 15px 0 15px 20px;
+        flex: 1 1 46%;
+    }
+
+    &__text {
+        @extend .header__img;
+        margin: 15px 20px 15px 15px;
+    }
+
+       .text {
+           &__caption {
+            font-family: $Tahoma;
+            font-size: 21px;
+            }
+
+           &__item {
+               margin: 11px 0;
+               @extend %fontP;
+           }
+
+           &__link {
+               @extend %button;
+           }
+           &__link:hover {
+               background: $hoverColor;
+           }
+       }
+}
+
+.article {
+    &__caption {
+        @extend %caption;
+    }
+
+    &__item {
+        @extend %fontP;
+    }
+}
+
+.icons {
+    @extend %flex;
+    justify-content: space-around;
+    &__element {
+        padding: 15px 15px 5px 15px;
+    }
+    .element {
+        @extend %flex;
+        &__img {
+            align-self: center;
+        }
+        &__item {
+            font-style:italic;
+            font-size: 14px;
+            @extend .element__img;
+            flex: 1 1 20%;
+            margin: 5px 10px;  
+        }
+    }
+}
+
+@media only screen and (max-width: 705px) {
+        .header__img {
+            margin: 15px;
+        }
+
+        .header__text {
+            margin: 0 15px 15px 15px;
+        }
+
+        .article__caption {
+            padding: 0 15px;
+        }
+
+        .article__item {
+            padding: 0 15px;
+        }
+}

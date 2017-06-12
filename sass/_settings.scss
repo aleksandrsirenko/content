@@ -1,0 +1,47 @@
+﻿body, h1, h2, h3, h4, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+$bgColor:#F0F0F0;
+$color: #8d8d8d;
+$hoverColor: #961109;
+$Tahoma: 'Tahoma', sans-serif;
+$TimesNewRoman: 'Times New Roman', sans-serif;
+
+.content {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+%flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+%fontP {
+    font-size: 14px;
+    line-height: 20px;
+    color: #8d8d8d;
+}
+
+%button {
+    text-decoration: none;
+    padding: 5px 20px;
+    background: linear-gradient(to top, #B4362D, #D94137);
+    font-family: $Tahoma;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+%caption {
+    margin-top: 20px;
+    margin-bottom:7px;
+    font-family: $Tahoma;
+    font-size: 18px;
+}
+
+
+

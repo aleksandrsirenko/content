@@ -1,0 +1,109 @@
+
+body, h1, h2, h3, h4, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.header, .icons, .icons .element {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header .text__item, .article__item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8d8d8d;
+}
+
+.header .text__link {
+  text-decoration: none;
+  padding: 5px 20px;
+  background: linear-gradient(to top, #B4362D, #D94137);
+  font-family: "Tahoma", sans-serif;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.article__caption {
+  margin-top: 20px;
+  margin-bottom: 7px;
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+}
+
+.image__page {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-color: #F0F0F0;
+}
+
+.header__img, .header__text {
+  margin: 15px 0 15px 20px;
+  flex: 1 1 46%;
+}
+
+.header__text {
+  margin: 15px 20px 15px 15px;
+}
+
+.header .text__caption {
+  font-family: "Tahoma", sans-serif;
+  font-size: 21px;
+}
+
+.header .text__item {
+  margin: 11px 0;
+}
+
+.header .text__link:hover {
+  background: #961109;
+}
+
+
+.icons {
+  justify-content: space-around;
+}
+
+.icons__element {
+  padding: 15px 15px 5px 15px;
+}
+
+.icons .element__img, .icons .element__item {
+  align-self: center;
+}
+
+.icons .element__item {
+  font-style: italic;
+  font-size: 14px;
+  flex: 1 1 20%;
+  margin: 5px 10px;
+}
+
+@media only screen and (max-width: 705px) {
+
+  .header__img, .header__text {
+    margin: 15px;
+  }
+
+  .header__text {
+    margin: 0 15px 15px 15px;
+  }
+/
+  .article__caption {
+    padding: 0 15px;
+  }
+
+  .article__item {
+    padding: 0 15px;
+  }
+}
